@@ -10,7 +10,7 @@ function Slider() {
     const [loading,setLoading] = useState(false);
     let newData = data.filter((item) => {
         return item.images[0]!=="";
-    })
+    }).slice(0,3);
     let slideInterval;
     useEffect(() => {
         const controller = new AbortController();

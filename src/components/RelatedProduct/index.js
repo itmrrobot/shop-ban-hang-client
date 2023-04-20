@@ -11,6 +11,7 @@ function RelatedProduct() {
     const [products,setProducts] = useState([]);
     const itemElement = useRef();
     let container = useRef();
+    const newProducts = products.slice(0,3);
     
     useEffect(() => {
         const controller = new AbortController();
@@ -75,7 +76,7 @@ function RelatedProduct() {
           </svg>
         </div>
         <div className={cx("slide")} ref={container}>
-          {products.map((product, index) => {
+          {newProducts.map((product, index) => {
             return (
               product.images[0] !== "" &&
               product.images[0] !== null && (
