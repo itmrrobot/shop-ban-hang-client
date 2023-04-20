@@ -1,0 +1,26 @@
+.wrapAD {
+    position: relative;
+}
+
+.wrapper-body {
+    display: flex;
+}
+
+.sidebarAD {
+    width: 15%;
+}
+
+.contentAD {
+    width: 85%;
+    background-color: #f0f4f7;
+    height: 100vh;
+}
+
+@media(max-width:1024px) {
+    .sidebarAD {
+        width: 0;
+    }
+    .contentAD {
+        width: 100%;
+    }
+}

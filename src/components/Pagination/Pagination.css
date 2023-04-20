@@ -1,0 +1,26 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.btn-pagina {
+    border: none;
+    background-color: var(--light-color);
+    font-size: 1.6rem;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin: 0 6px;
+}
+
+.active {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    border-radius: 4px;
+}
+
+@media (max-width: 1024px) {
+    .btn-pagina {
+        padding: 4px;
+    }
+}

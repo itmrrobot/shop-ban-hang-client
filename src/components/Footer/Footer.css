@@ -1,0 +1,39 @@
+.wrapper-footer {
+    background-color: #212121;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.footer-list {
+    display: flex;
+    padding: 50px 0;
+    justify-content: space-between;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    color: #cfcfd7;
+}
+
+.footer-title {
+    margin-bottom: 28px;
+    color: var(--light-color);
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #cfcfd7;
+    margin: 4px 0;
+}
+
+.footer-address,
+.footer-time {
+    display: block;
+    margin: 4px 0;
+}

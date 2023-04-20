@@ -1,0 +1,78 @@
+.wrap {
+    padding: 0 18px;
+    .title {
+        font-size: 3.6rem;
+        font-weight: 500;
+        color: #716f72;
+        margin: 32px 0;
+    }
+    .content {
+        background-color: var(--light-color);
+        padding: 12px 18px;
+    }
+}
+
+.form-edit-product {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group-product {
+    flex: 2;
+    padding: 0px 18px;
+}
+
+.form-product-title {
+    opacity: 0.6;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.form-product-input {
+    padding: 8px 18px;
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-size: 1.6rem;
+}
+
+.form-product-desc {
+    height: 120px;
+    border: 2px solid #ccc;
+    padding: 18px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    border-radius: 4px;
+    resize: none;
+    margin-top: 12px;
+    width: 100%;
+}
+
+.group-edit-btn {
+    display: flex;
+    padding: 12px 18px;
+    justify-content: space-between;
+    .btn-reset {
+        padding: 8px 14px;
+        background-color: #f0f4f7;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .btn-edit {
+        padding: 8px 16px;
+        background-color: #2fa5ff;
+        color: var(--light-color);
+        border-radius: 4px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 1024px) {
+    .wrap {
+        background-color: #f0f4f7;
+    }
+    .form-edit-product {
+        display: block;
+    }
+}

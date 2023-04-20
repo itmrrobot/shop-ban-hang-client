@@ -1,0 +1,60 @@
+.form-resgister {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    .resgister-title {
+        font-size: 3rem;
+        margin: 100px 0 16px;
+    }
+    .submit-resgister {
+        padding: 10px 126px;
+        margin-top: 14px;
+    }
+}
+
+.form-resgister-group {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0;
+    .form-group-title {
+        margin-bottom: 8px;
+    }
+    .message {
+        color: red;
+        margin-top: 8px;
+    }
+}
+
+.wrap-message {
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .icon-success {
+        background-color: #009700;
+        border-radius: 50%;
+        padding: 8px;
+    }
+    .btn-ok {
+        background-color: #008fd3;
+        border: none;
+        padding: 14px 32px;
+        color: var(--light-color);
+        font-size: 2rem;
+        border-radius: 6px;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+.message-success-title {
+    font-size: 2.6rem;
+    margin-top: 32px;
+}
+.message-success-sentence {
+    text-align: center;
+    margin: 18px 0px 24px;
+}

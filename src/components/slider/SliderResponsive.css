@@ -1,0 +1,17 @@
+@media (max-width: 1024px) {
+    .slider { 
+        margin: 24px 14px 32px;
+    }
+    .slider-title {
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: calc(560px /2 - 186px);
+    }
+    .slider-desc {
+        width: auto;
+        left: 0px;
+        right: 0;
+        text-align: center;
+    }
+}

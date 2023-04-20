@@ -1,0 +1,38 @@
+.headerAD-wrap {
+    height: 46px;
+    background-color: var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+}
+
+.headerAD-title {
+    color: var(--light-color);
+    font-weight: 500;
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+
+.headerAD-name {
+    color: var(--light-color);
+    display: flex;
+}
+
+.hideOnPC {
+    display: none;
+}
+
+.avatar-link {
+    text-decoration: none;
+}
+
+.t-36 {
+    top: 36px;
+}
+
+@media (max-width:1024px) {
+    .hide {
+        display: none;
+    }
+}

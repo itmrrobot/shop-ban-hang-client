@@ -1,0 +1,27 @@
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto 50px;
+    display: flex;
+    .sidebar {
+        width: 20%;
+        margin-right: 8px;
+    }
+    .products {
+        width: 80%;
+        margin-top: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .wrap {
+        display: block;
+        .sidebar {
+            width: 100%;
+            padding: 0 16px;
+        }
+        .products {
+            width: 100%;
+        }
+    }
+}
+

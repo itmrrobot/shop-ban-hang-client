@@ -1,0 +1,23 @@
+.itemAD {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 12px 18px;
+    text-decoration: none;
+    color: #2fa5ff;
+}
+
+.itemActive {
+    background-color: #2fa5ff;
+    color: var(--light-color);
+}
+
+.itemAD-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 12px;
+}
+
+.active {
+   
+}
