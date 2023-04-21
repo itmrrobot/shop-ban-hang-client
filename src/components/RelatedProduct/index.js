@@ -11,7 +11,7 @@ function RelatedProduct() {
     const [products,setProducts] = useState([]);
     const itemElement = useRef();
     let container = useRef();
-    const newProducts = products.slice(0,3);
+    const newProducts = products.slice(0,10);
     
     useEffect(() => {
         const controller = new AbortController();
