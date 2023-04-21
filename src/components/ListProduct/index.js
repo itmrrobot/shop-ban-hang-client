@@ -143,7 +143,7 @@ function ListProduct() {
                                 <td>
                                   <div className={cx("group-btn")}>
                                     <Link to={`/login/admin/products/edit/${product._id}`} className={cx("btn-edit")}>Sửa</Link>
-                                    <button className={cx("btn-delete")} onClick={() => handleDelete(product.id)}>Xóa</button>
+                                    <button className={cx("btn-delete")} onClick={() => handleDelete(product._id)}>Xóa</button>
                                   </div>
                                 </td>
                               </tr>
