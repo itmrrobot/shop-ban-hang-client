@@ -7,11 +7,12 @@ import { Link } from "react-router-dom";
 
 const cx = classnames.bind(styles);
 
-function RelatedProduct() {
+function RelatedProduct({...props}) {
     const [products,setProducts] = useState([]);
+    const {categoryId} = props;
     const itemElement = useRef();
     let container = useRef();
-    const newProducts = products.slice(0,10);
+    const newProducts = products.filter(p=>p.category?.id===categoryId).slice(0,10);
     
     useEffect(() => {
         const controller = new AbortController();

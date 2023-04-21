@@ -178,7 +178,7 @@ function Product() {
           </div>
         </div>
         
-        <RelatedProduct/>
+        <RelatedProduct categoryId={product.category?.id}/>
       </div>
     );
 }
