@@ -1,3 +1,3 @@
-export const url = 'https://shop-ban-hang-backend.onrender.com';
+export const url = 'http://localhost:4000';
 
-//https://api.escuelajs.co/api/v1
+//https://shop-ban-hang-backend.onrender.com

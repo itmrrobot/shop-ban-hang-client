@@ -1,0 +1,6 @@
+@use '../ListProduct/ListProduct.module.scss';
+
+.wrap-table {
+    @extend .wrap-table;
+    margin-top: 32px;
+}

@@ -66,7 +66,7 @@ function ListProduct() {
     },[]);
     
     const handleDelete = (id) => {
-        const newProducts = data.filter(p => p.id!==id);
+        const newProducts = data.filter(p => p._id!==id);
         axios.delete(url+`/products/${id}`);
         setData(newProducts);
     }
