@@ -11,8 +11,15 @@ const cx = classNames.bind(style);
 
 function ManageUserAccounts() {
     const [isLoading,setIsLoading] = useState(false);
-    const [users,setUsers] = useState([]);
+    const [data,setData] = useState([]);
+    const [searchInput,setSearchInput] = useState('');
     const {user} = AuthState();
+    let users = data;
+    if(searchInput) {
+        users=users.filter((u)=> {
+            return u.name.toLowerCase()===searchInput.toLowerCase().trim()||u.fullname.toLowerCase()===searchInput.toLowerCase().trim()||u.address.toLowerCase()===searchInput.toLowerCase().trim();
+        })
+    }
     useEffect(() => {
         const controller = new AbortController();
         const fetchData = async () => {
@@ -24,7 +31,7 @@ function ManageUserAccounts() {
                     signal:controller.signal
                 })
                 setIsLoading(true);
-                setUsers(res.data);               
+                setData(res.data);               
             } catch(e) {
                 console.log(e);
             }
@@ -40,14 +47,26 @@ function ManageUserAccounts() {
                 'Authorization': `Bearer ${user.token}`
             },
         });
-        const newUsers = users.filter(p => p._id!==id);
-        setUsers(newUsers);
+        const newUsers = data.filter(p => p._id!==id);
+        setData(newUsers);
+    }
+    const handleSearch = (e) => {
+        if(e.which===13) {
+            setSearchInput(e.target.value);
+        }
     }
     return (
         <div className={cx("wrap-products")}>
             <h3 className={cx("title")}>Người dùng</h3>
             <div className={cx("content")}>
+                <div className={cx("filter")}>
                 <Link to="/login/admin/users/create" className={cx("btn-create")}>Thêm mới</Link>
+                <div className={cx("search-fiter")}>
+                        Tìm kiếm:
+                        <input type="text" className={cx("search-input")} onKeyDown={handleSearch}/>
+                    </div> 
+                </div>
+                
                 <div className={cx("wrap-table")}>
                 <table className={cx("products-table")}>
                     <thead>
