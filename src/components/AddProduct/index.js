@@ -52,9 +52,14 @@ function AddProduct() {
       e.preventDefault();
       setFormErrors(validate(formValues));
       try {
-        const respone = await axios.post(url+'/products/',newFormValues);
-        setIsSuccess(true);
-        setIsShow(true);
+        if(!formValues) {
+
+          const respone = await axios.post(url+'/products/',newFormValues);
+          setIsSuccess(true);
+          setIsShow(true);
+        } else {
+          throw new Error();
+        }
       } catch(e) {
         console.log(e);
         setIsSuccess(false);
